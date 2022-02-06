@@ -1,19 +1,19 @@
 package com.example.myapplication
 
+import android.content.ContentValues
 import android.content.Intent
+import android.database.sqlite.SQLiteDatabase
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import java.time.LocalDate
-import java.time.ZonedDateTime
-import java.time.format.DateTimeFormatter
 
-//作成者：綾部，井口
+private var helper: TestOpenHelper? = null
+private var db: SQLiteDatabase? = null
 
 class signupOne : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
@@ -50,9 +50,18 @@ class signupOne : AppCompatActivity() {
 
         //新規登録画面2に遷移
         nextButton.setOnClickListener {
-            val intent = Intent(this, signupTwo::class.java)
-            //IDの引き渡し
-            intent.putExtra("idKey", textId.getText().toString())
+            //DB
+            if (helper == null) {
+                helper = TestOpenHelper(applicationContext)
+            }
+            if (db == null) {
+                db = helper!!.getWritableDatabase()
+            }
+
+
+//            val intent = Intent(this, signupTwo::class.java)
+//            //IDの引き渡し
+//            intent.putExtra("idKey", textId.getText().toString())
             //入力制限．パスワードが6文字以上，誕生年が4文字以上，誕生月日が1文字以上
             if (textPasswordEdit.length() > 5 && textYearEdit.length() > 3 && textMonthEdit.length() > 0 && textDayEdit.length() > 0) {
                 //生年月日をyyyymmddに変換
@@ -64,50 +73,59 @@ class signupOne : AppCompatActivity() {
                     when (textMonthEdit.getText().toString().toInt()) {
                         1, 3, 5, 7, 8, 10, 12 -> {
                             if (32 > textDayEdit.getText().toString().toInt()) {
-                                //値の引き渡し
-                                //パスワード
-                                intent.putExtra("passwordKey", textPasswordEdit.getText().toString())
-                                //誕生年
-                                intent.putExtra("yearKey", textYearEdit.getText().toString())
-                                //誕生月
-                                intent.putExtra("monthKey", textMonthEdit.getText().toString())
-                                //誕生日
-                                intent.putExtra("dayKey", textDayEdit.getText().toString())
-                                startActivity(intent)
+
+                                // 取得した内容を文字列として認識
+                                val userid = textId.getText().toString()
+                                val password = textPasswordEdit.getText().toString()
+                                val birthyear = textYearEdit.getText().toString()
+                                val birthmonth =  textMonthEdit.getText().toString()
+                                val birthday = textDayEdit.getText().toString()
+
+                                val birth = birthyear + birthmonth + birthday
+                                //入力
+                                insertData(db!!, userid,password,birth)
+
                             }
                         }
                         4, 6, 9, 11-> {
                             if (31 > textDayEdit.getText().toString().toInt()) {
                                 //値の引き渡し
-                                //パスワード
-                                intent.putExtra("passwordKey", textPasswordEdit.getText().toString())
-                                //誕生年
-                                intent.putExtra("yearKey", textYearEdit.getText().toString())
-                                //誕生月
-                                intent.putExtra("monthKey", textMonthEdit.getText().toString())
-                                //誕生日
-                                intent.putExtra("dayKey", textDayEdit.getText().toString())
-                                startActivity(intent)
+                                // 取得した内容を文字列として認識
+                                val userid = textId.getText().toString()
+                                val password = textPasswordEdit.getText().toString()
+                                val birthyear = textYearEdit.getText().toString()
+                                val birthmonth =  textMonthEdit.getText().toString()
+                                val birthday = textDayEdit.getText().toString()
+//
+                                val birth = birthyear + birthmonth + birthday
+                                //入力
+                                insertData(db!!, userid,password,birth)
                             }
                         }
                         2 -> {
                             if (30 > textDayEdit.getText().toString().toInt()) {
                                 //値の引き渡し
-                                //パスワード
-                                intent.putExtra("passwordKey", textPasswordEdit.getText().toString())
-                                //誕生年
-                                intent.putExtra("yearKey", textYearEdit.getText().toString())
-                                //誕生月
-                                intent.putExtra("monthKey", textMonthEdit.getText().toString())
-                                //誕生日
-                                intent.putExtra("dayKey", textDayEdit.getText().toString())
-                                startActivity(intent)
+
+                                // 取得した内容を文字列として認識
+                                val userid = textId.getText().toString()
+                                val password = textPasswordEdit.getText().toString()
+                                val birthyear = textYearEdit.getText().toString()
+                                val birthmonth =  textMonthEdit.getText().toString()
+                                val birthday = textDayEdit.getText().toString()
+
+
+                                val birth = birthyear + birthmonth + birthday
+                                //入力
+                                insertData(db!!, userid,password,birth)
                             }
                         }
                     }
                 }
             }
-        }
+                val intent = Intent(this,signupTwo::class.java)
+                startActivity(intent)
+
+            }
 
 
         //キャンセルボタン
@@ -119,5 +137,12 @@ class signupOne : AppCompatActivity() {
             startActivity(intent)
         }
 
+    }
+    private fun insertData(db: SQLiteDatabase,userid: String, password: String, birth: String) {
+        val values = ContentValues()
+        values.put("userid", userid)
+        values.put("password", password)
+        values.put("birth", birth)
+        db.insert("account", null, values)
     }
 }

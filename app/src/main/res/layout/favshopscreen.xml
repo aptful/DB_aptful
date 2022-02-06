@@ -107,201 +107,201 @@
         android:layout_marginLeft="50dp"/>
 
 
-    <!--2個目-->
-    <!--背景白-->
-    <ImageView
-        android:id="@+id/backgroundWhite2"
-        android:layout_height="140dp"
-        android:layout_width="350dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="25dp"
-        android:src="@drawable/rectangle"/>
+            <!--2個目-->
+            <!--背景白-->
+            <ImageView
+                android:id="@+id/backgroundWhite2"
+                android:layout_height="140dp"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/rectangle"/>
 
-    <!--日付 放送-->
-    <TextView
-        android:id="@+id/dayText2"
-        android:layout_width="70dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="230dp"
-        android:layout_marginTop="-130dp"
-        android:gravity="center"
-        android:text="2021/2/1 放送"  />
+            <!--日付 放送-->
+            <TextView
+                android:id="@+id/dayText2"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="-130dp"
+                android:gravity="center"
+                android:text="2021/9/1 放送"  />
 
-    <!--店名-->
-    <TextView
-        android:id="@+id/shopText2"
-        android:layout_width="160dp"
-        android:layout_height="70dp"
-        android:layout_marginLeft="185dp"
-        android:gravity="center"
-        android:text="レストラン K"
-        android:textSize="25dp" />
+            <!--店名-->
+            <TextView
+                android:id="@+id/shopText2"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="185dp"
+                android:gravity="center"
+                android:text="お菓子屋 B"
+                android:textSize="25dp" />
 
-    <!--アクセス-->
-    <TextView
-        android:id="@+id/accessText2"
-        android:layout_width="150dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="190dp"
-        android:layout_marginTop="2dp"
-        android:gravity="center"
-        android:text="土佐一宮駅から徒歩10分" />
+            <!--アクセス-->
+            <TextView
+                android:id="@+id/accessText2"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="中央公園すぐ斜め" />
 
-    <!--お店の写真-->
-    <ImageView
-        android:id="@+id/homepic2"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        app:srcCompat="@drawable/home2"
-        android:layout_marginTop="-116dp"
-        android:layout_marginLeft="50dp"/>
+            <!--お店の写真-->
+            <ImageView
+                android:id="@+id/homepic2"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:srcCompat="@drawable/home2"
+                android:layout_marginTop="-116dp"
+                android:layout_marginLeft="50dp"/>
 
-    <!--3個目-->
-    <!--背景白-->
-    <ImageView
-        android:id="@+id/backgroundWhite3"
-        android:layout_height="140dp"
-        android:layout_width="350dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="25dp"
-        android:src="@drawable/rectangle"/>
+            <!--3個目-->
+            <!--背景白-->
+            <ImageView
+                android:id="@+id/backgroundWhite3"
+                android:layout_height="140dp"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/rectangle"/>
 
-    <!--日付 放送-->
-    <TextView
-        android:id="@+id/dayText3"
-        android:layout_width="70dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="230dp"
-        android:layout_marginTop="-130dp"
-        android:gravity="center"
-        android:text="2021/2/1 放送"  />
+            <!--日付 放送-->
+            <TextView
+                android:id="@+id/dayText3"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="-130dp"
+                android:gravity="center"
+                android:text="2021/8/31 放送"  />
 
-    <!--店名-->
-    <TextView
-        android:id="@+id/shopText3"
-        android:layout_width="160dp"
-        android:layout_height="70dp"
-        android:layout_marginLeft="185dp"
-        android:gravity="center"
-        android:text="レストラン K"
-        android:textSize="25dp" />
+            <!--店名-->
+            <TextView
+                android:id="@+id/shopText3"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="185dp"
+                android:gravity="center"
+                android:text="カフェ E"
+                android:textSize="25dp" />
 
-    <!--アクセス-->
-    <TextView
-        android:id="@+id/accessText3"
-        android:layout_width="150dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="190dp"
-        android:layout_marginTop="2dp"
-        android:gravity="center"
-        android:text="土佐一宮駅から徒歩10分" />
+            <!--アクセス-->
+            <TextView
+                android:id="@+id/accessText3"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="高知駅から徒歩10分" />
 
-    <!--お店の写真 -->
-    <ImageView
-        android:id="@+id/homepic3"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        app:srcCompat="@drawable/home3"
-        android:layout_marginTop="-116dp"
-        android:layout_marginLeft="50dp"/>
+            <!--お店の写真 -->
+            <ImageView
+                android:id="@+id/homepic3"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:srcCompat="@drawable/home3"
+                android:layout_marginTop="-116dp"
+                android:layout_marginLeft="50dp"/>
 
-    <!--4個目-->
-    <!--背景白-->
-    <ImageView
-        android:id="@+id/backgroundWhite4"
-        android:layout_height="140dp"
-        android:layout_width="350dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="25dp"
-        android:src="@drawable/rectangle"/>
+            <!--4個目-->
+            <!--背景白-->
+            <ImageView
+                android:id="@+id/backgroundWhite4"
+                android:layout_height="140dp"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/rectangle"/>
 
-    <!--日付 放送-->
-    <TextView
-        android:id="@+id/dayText4"
-        android:layout_width="70dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="230dp"
-        android:layout_marginTop="-130dp"
-        android:gravity="center"
-        android:text="2021/2/1 放送"  />
+            <!--日付 放送-->
+            <TextView
+                android:id="@+id/dayText4"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="-130dp"
+                android:gravity="center"
+                android:text="2021/7/13 放送"  />
 
-    <!--店名-->
-    <TextView
-        android:id="@+id/shopText4"
-        android:layout_width="160dp"
-        android:layout_height="70dp"
-        android:layout_marginLeft="185dp"
-        android:gravity="center"
-        android:text="レストラン K"
-        android:textSize="25dp" />
+            <!--店名-->
+            <TextView
+                android:id="@+id/shopText4"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="185dp"
+                android:gravity="center"
+                android:text="コーヒー M"
+                android:textSize="25dp" />
 
-    <!--アクセス-->
-    <TextView
-        android:id="@+id/accessText4"
-        android:layout_width="150dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="190dp"
-        android:layout_marginTop="2dp"
-        android:gravity="center"
-        android:text="土佐一宮駅から徒歩10分" />
+            <!--アクセス-->
+            <TextView
+                android:id="@+id/accessText4"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="高知駅から徒歩10分" />
 
-     <!--お店の写真-->
-    <ImageView
-        android:id="@+id/homepic4"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        app:srcCompat="@drawable/home1"
-        android:layout_marginTop="-116dp"
-        android:layout_marginLeft="50dp"/>
+            <!--お店の写真-->
+            <ImageView
+                android:id="@+id/homepic4"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:srcCompat="@drawable/home1"
+                android:layout_marginTop="-116dp"
+                android:layout_marginLeft="50dp"/>
 
-    <!--5個目-->
-    <!--背景白-->
-    <ImageView
-        android:id="@+id/backgroundWhite5"
-        android:layout_height="140dp"
-        android:layout_width="350dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="25dp"
-        android:src="@drawable/rectangle"/>
+            <!--5個目-->
+            <!--背景白-->
+            <ImageView
+                android:id="@+id/backgroundWhite5"
+                android:layout_height="140dp"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/rectangle"/>
 
-    <!--日付 放送-->
-    <TextView
-        android:id="@+id/dayText5"
-        android:layout_width="70dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="230dp"
-        android:layout_marginTop="-130dp"
-        android:gravity="center"
-        android:text="2021/2/1 放送"  />
+            <!--日付 放送-->
+            <TextView
+                android:id="@+id/dayText5"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="-130dp"
+                android:gravity="center"
+                android:text="2021/6/16 放送"  />
 
-    <!--店名-->
-    <TextView
-        android:id="@+id/shopText5"
-        android:layout_width="160dp"
-        android:layout_height="70dp"
-        android:layout_marginLeft="185dp"
-        android:gravity="center"
-        android:text="レストラン K"
-        android:textSize="25dp" />
+            <!--店名-->
+            <TextView
+                android:id="@+id/shopText5"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="185dp"
+                android:gravity="center"
+                android:text="カフェバー K"
+                android:textSize="25dp" />
 
-    <!--アクセス-->
-    <TextView
-        android:id="@+id/accessText5"
-        android:layout_width="150dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="190dp"
-        android:layout_marginTop="2dp"
-        android:gravity="center"
-        android:text="土佐一宮駅から徒歩10分" />
+            <!--アクセス-->
+            <TextView
+                android:id="@+id/accessText5"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="高知駅から徒歩10分" />
 
-    <!--お店の写真-->
-    <ImageView
-        android:id="@+id/homepic5"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        app:srcCompat="@drawable/home1"
-        android:layout_marginTop="-116dp"
-        android:layout_marginLeft="50dp"/>
+            <!--お店の写真-->
+            <ImageView
+                android:id="@+id/homepic5"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:srcCompat="@drawable/home2"
+                android:layout_marginTop="-116dp"
+                android:layout_marginLeft="50dp"/>
 
         </LinearLayout>
     </ScrollView>

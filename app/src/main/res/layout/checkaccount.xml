@@ -71,9 +71,10 @@
 
     <!--利用者のID-->
     <TextView
+        android:id="@+id/text_id"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:text="1230327"
+        android:text=" "
         android:textSize="25sp"
         android:textColor="@color/black"
         android:gravity="center"
@@ -94,9 +95,10 @@
 
     <!--利用者のパスワード-->
     <TextView
+        android:id="@+id/passwordText"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:text="●●●●●●●●"
+        android:text=" "
         android:textSize="18sp"
         android:textColor="@color/black"
         android:gravity="center"
@@ -118,9 +120,10 @@
 
     <!--利用者の生年月日-->
     <TextView
+        android:id="@+id/birthText"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:text="2000年\n6月27日"
+        android:text="  "
         android:textSize="25sp"
         android:textColor="@color/black"
         android:gravity="center"
